@@ -8,8 +8,8 @@
         <div class="inner">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="box">
-                    <a href="">
-                        <h4></h4>
+                    <a href="{{ route('admin.settings.general-settings') }}">
+                        <h4>General Settings</h4>
                     </a>
                 </div>
                 <div class="box">

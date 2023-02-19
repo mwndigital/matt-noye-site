@@ -13,6 +13,10 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                montsRegular: ['montsRegular', 'sans-serif'],
+                montsLight: ['montsLight', 'sans-serif'],
+                roboBold: ['roboBold', 'sans-serif'],
+                roboMedium: ['roboMedium', 'sans-serif'],
             },
         },
     },

@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'montsLight';
+    src: url('../Fonts/Montserrat-Light.ttf');
+}
+@font-face {
+    font-family: 'montsRegular';
+    src: url('../Fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: 'roboBold';
+    src: url('../Fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'roboMedium';
+    src: url('../Fonts/Roboto-Medium.ttf');
+}
+
+$montsLight: 'montsLight', sans-serif;
+$montsRegular: 'montsRegular', sans-serif;
+$roboBold: 'roboBold', sans-serif;
+$roboMedium: 'roboMedium', sans-serif;

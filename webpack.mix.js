@@ -33,4 +33,5 @@ mix.js('resources/assets/js/app.js', 'public/assets/js')
         'node_modules/@fortawesome/fontawesome-free/webfonts',
         'public/assets/webfonts'
     )
+    .copyDirectory('node_modules/tw-elements/dist/js/index.min.js', 'public/assets/js')
 ;

@@ -1,0 +1,10 @@
+section {
+    @apply py-24;
+    .sectionTitle {
+        @apply text-purple-700 text-4xl font-roboBold uppercase mb-6 mx-auto;
+    }
+
+    p {
+        @apply text-slate-700 text-lg font-montsRegular mb-4;
+    }
+}

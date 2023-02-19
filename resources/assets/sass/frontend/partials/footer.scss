@@ -1,0 +1,36 @@
+footer {
+    .footerMain {
+        h5.footerTitle {
+            @apply text-white text-2xl font-roboBold text-left mb-6;
+        }
+        ul.links {
+            @apply list-none text-left;
+            li {
+                @apply mb-2;
+
+                a {
+                    @apply text-white text-lg font-montsRegular ease-in-out ring-0 no-underline block h-full w-full duration-500 ease-in-out hover:text-purple-500 hover:no-underline hover:shadow-none hover:ring-0;
+                }
+            }
+        }
+        ul.contactDetails {
+            @apply mb-4;
+            li {
+                @apply mb-2;
+                a {
+                    @apply text-white font-montsRegular text-lg;
+                }
+            }
+        }
+        ul.socialLinks {
+            @apply list-none my-4 flex flex-row;
+            li {
+                @apply pr-6;
+
+                a {
+                    @apply text-white text-2xl block;
+                }
+            }
+        }
+    }
+}

@@ -9,9 +9,14 @@
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
+//Fonts
+@import "sitewide-partials/fonts";
+
 //Sitewide partials
 @import "sitewide-partials/body";
 @import "sitewide-partials/containers";
+@import "sitewide-partials/customBtns";
+@import "sitewide-partials/forms";
 
 //Sitewide components
 @import "sitewide-components/customBtns";

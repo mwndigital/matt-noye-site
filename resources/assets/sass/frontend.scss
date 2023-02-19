@@ -1,0 +1,13 @@
+body {
+    @apply bg-white;
+}
+
+//Partials
+@import "frontend/partials/header";
+@import "frontend/partials/sections";
+@import "frontend/partials/hireMePopup";
+@import "frontend/partials/footer";
+
+
+//Pages
+@import "frontend/homepage";

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\HireMeSubmissions;
 use Illuminate\Http\Request;
 
 class AdminIndexController extends Controller
@@ -14,7 +15,8 @@ class AdminIndexController extends Controller
      */
     public function index()
     {
-        return view('admin.dashboard');
+        $hireMe = HireMeSubmissions::all();
+        return view('admin.dashboard', compact('hireMe'));
     }
 
     /**

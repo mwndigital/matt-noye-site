@@ -11,9 +11,9 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 //Frontend routes
-Route::get('/', function () {
-    return view('frontend.homepage', [FrontendController::class, 'index']);
-});
+Route::post('/hire-me', [FrontendController::class, 'hireMeStore'])->name('hireme.store');
+Route::get('/', [FrontendController::class, 'index']);
+
 
 
 Route::get('/dashboard', function () {
@@ -33,7 +33,11 @@ Route::middleware(['auth', 'role:super admin|admin'])->name('admin.')->prefix('a
     //Permissions
     Route::resource('permissions', PermissionController::class);
 
-    //Settings
+    //Setting
+    Route::put('settings/general-settings/update', [SettingsController::class, 'generalSettingsUpdate'])->name('settings.general-settings.update');
+    Route::post('settings/general-settings/store', [SettingsController::class, 'generalSettingsStore'])->name('settings.general-settings.store');
+    Route::get('settings/general-settings/create', [SettingsController::class, 'generalSettingsCreate'])->name('settings.general-settings.create');
+    Route::get('settings/general-settings', [SettingsController::class, 'generalSettingsIndex'])->name('settings.general-settings');
     Route::resource('settings', SettingsController::class);
 
     //Activity Log

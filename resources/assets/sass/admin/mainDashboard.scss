@@ -1,0 +1,18 @@
+.dashboardItem {
+    @apply overflow-x-auto bg-gray-50 shadow-none rounded-md py-3 px-6;
+    h5 {
+        @apply text-slate-700 text-2xl font-roboMedium mb-6 text-left;
+    }
+    table {
+        thead {
+            th {
+                @apply min-w-[250px];
+            }
+        }
+        tbody {
+            tr {
+                @apply min-w-[250px];
+            }
+        }
+    }
+}
